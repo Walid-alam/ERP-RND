@@ -1,0 +1,751 @@
+/*
+Theme Name: Mistiri
+Theme URI: http://gridbootstrap.com/demo/themes/mistiri/
+Author: Gridbootstrap
+Author URI: http://gridbootstrap.com
+Description: Mistiri theme lets you create a responsive construction building website with a creative, modern design. Very easy to customize your website, and change your content's layout with page builder. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: mistiri 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Table of Contents
+==========================================================================
+# Global 
+# Header 
+# Home 
+# Services 
+# Features
+# Work Process
+# Portfolio
+# Team
+# Testimonial
+# Blog
+# Clients
+# Footer
+# About Us Page
+# Service Page
+# Features Page
+# Project Page
+# Project Details page 
+# Blog Page
+# Blog Details Page
+# Contact Page 
+# Extras
+# Widgets
+===========================================================================*/
+
+/* ========================================================================
+ 	Global
+ ========================================================================== */
+.screen-reader-text{}
+.wp-caption {}
+.wp-caption-text {}
+.gallery-caption {}
+.bypostauthor {}
+.alignright {}
+.alignleft {}
+.aligncenter {}
+.screen-reader-text{}
+.sticky{}
+.gitignore{}
+
+/*-----------------------------------------------------------------------------------*/
+/*  CALENDAR STYLES WIDGET
+/*-----------------------------------------------------------------------------------*/
+/*.widget_calendar {float: none;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { 
+    background: none repeat scroll 0 0 #E9E9E9;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center; 
+}
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th {
+    border: 1px solid #E9E9E9;
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #E9E9E9; text-align: center; padding:6px;}
+#wp-calendar tbody td#today {background: #f56961;color: #fff;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot {border: 1px solid #E9E9E9;}
+#wp-calendar tfoot #next { font-size: 12px; text-transform: uppercase; text-align: right; color: #f56961;}
+#wp-calendar tfoot #prev { font-size: 12px; text-transform: uppercase; padding-top: 10px; color: #f56961;}*/
+h1.site-title a.logo { color: #F3CC29; border: 3px solid #F3CC29; padding: 10px; background-color: #283949; }
+.widget select {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text .textwidget img{max-width: 100%;height: auto;}
+.widget_text select, .widget_text input , .widget_text textarea  {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text option {max-width: 100%;}
+.widget_text .textwidget form.wpcf7-form input[type="submit"]{ width: auto !important; padding: 0 20px !important; }
+.widget_nav_menu ul li, .widget_pages ul li {color: #827b7d;line-height: 28px;font-size: 13px;}
+.widget_nav_menu ul li ul, .widget_pages ul li ul {padding-left: 15px;}
+.widget_nav_menu ul li a, .widget_pages ul li a{color: #827b7d;}
+.widget_nav_menu ul li a:hover, .widget_pages ul li a:hover {color: #615C5C;}
+.post_meta ul,.hentry ul{padding-left: 20px;list-style-type: square;margin-left: 30px;}
+.post_meta ul li,.hentry ul li{ list-style: inherit;}
+#content.meta ul ul,.blog-desc ul ul {    list-style-type: decimal;}
+#content .meta ul ul ul,.blog-desc ul ul ul{    list-style-type: decimal;}
+.post_meta ol,.hentry ol{padding-left: 20px;list-style: decimal outside none !important;margin-left: 30px;}
+.post_meta ol li,.hentry ol li{ list-style: inherit;}
+.blog-post ul li ul, .blog-post ol li ol,.blog-fixed ul li ul  { margin-bottom: 0; margin-left: 1.25em; }
+.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {text-align: left;}
+blockquote {
+
+  margin: 0 0 20px;
+
+  padding: 9px 20px 10px 19px;
+
+}
+
+blockquote cite {
+
+  color: #ccc;
+
+  display: block;
+
+  font-size: 12px;
+
+}
+
+div.wp-caption.alignnone,img.alignnone,.blog-fixed div.wp-caption.alignnone img ,.blog-post div.wp-caption.alignnone img {
+
+    width: 100% !important;
+
+}
+
+div.wp-caption.alignnone img{
+
+    max-width: 100%;
+
+}
+
+.alignright,.alignleft,.aligncenter,div.alignleft img,div.alignright img{
+
+    width: auto !important;
+
+}
+
+.alignleft{
+
+    float: left;
+
+    margin-right: 20px;
+
+}
+
+.alignright{
+
+    float: right;
+
+    margin-left: 20px;
+
+}
+
+.aligncenter img{
+
+    width: auto !important;
+
+}
+
+pre, code {
+
+    background-color: #F9F9F9;
+
+    border-color: rgba(180,180,180,1);
+
+    border-style: solid;
+
+    border-width: 0px 0px 0px 4px;
+
+    display: block;
+
+    font-family: 'Open Sans', sans-serif;font-weight: 300;
+
+    font-size: 14px;
+
+    padding: 10px;
+
+}
+
+
+
+pre, code {
+
+    margin-top:20px;
+
+    margin-left:20px;
+
+    margin-right:20px;
+
+    word-wrap: break-word;
+
+} 
+
+
+
+/*#wp-calendar tfoot #prev,#wp-calendar tfoot #next{
+
+    background: #f5f5f5;
+
+    border: 1px solid #E9E9E9;
+
+    text-align: center;
+
+    padding: 6px;
+
+}*/
+
+div.tagcloud a{
+
+    font-size: 15px !important;
+
+}
+
+a.rsswidget img{
+
+	width: auto;
+
+}
+
+
+
+ .share-social .social .fa-google-plus{
+
+ 	background-color: #dc4a38;
+
+ }
+
+ .share-social .social .fa-twitter{
+
+ 	background-color: #00acee;
+
+ }
+
+ .share-social .social .fa-linkedin{
+
+ 	background-color: #0b2b5c;
+
+ }
+
+ .blog-image > .entry-thumbnail > img{width:100%;} 
+
+
+
+ /*.blog-image > .entry-thumbnail > img.img-responsive{ height: 369px; width: 585px;}*/
+
+ .post-content ul.list-inline li { margin-left: 0px!important; }
+
+
+
+ /* Widget */
+
+.widget {
+
+    margin-bottom: 30px;
+
+    margin-top: 30px;
+
+    *zoom: 1;
+
+}
+
+.widget:before, .widget:after {
+
+    content: " ";
+
+    display: table;
+
+}
+
+.widget:after {
+
+    clear: both;
+
+}
+
+.widget:first-child {
+
+    margin-top: 0;
+
+}
+
+.widget .widgettitle, .widget .widget-title {
+
+    margin-bottom: 15px;
+
+    font-size: 1.1429em;
+
+    margin-top: 0;
+
+    letter-spacing: normal;
+
+}
+
+.widget .widgettitle, .widget .widget-title, .widget .widgettitle a, .widget .widget-title a {
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #313131;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+}
+
+.widget .widgettitle img, .widget .widget-title img {
+
+    margin-right: 3px;
+
+    margin-top: -2px;
+
+}
+
+.widget > div > ul, .widget > ul {
+
+    font-size: 0.9286em;
+
+    border-bottom: 1px solid #ededed;
+
+    margin-top: -8px;
+
+    margin-bottom: 0;
+
+}
+
+.widget > div > ul > li:first-child, .widget > ul > li:first-child {
+
+    border-top-width: 0;
+
+}
+
+.widget > div > ul li, .widget > ul li {
+
+    position: relative;
+
+    margin: 0;
+
+    padding: 7px 0;
+
+    line-height: 1.4;
+
+    border-top: 1px solid #ededed;
+
+    -webkit-transition: all 0.3s;
+
+    -moz-transition: all 0.3s;
+
+    transition: all 0.3s;
+
+}
+
+.widget > div > ul li p, .widget > ul li p {
+
+    margin-bottom: 0;
+
+}
+
+.widget > div > ul li > a, .widget > ul li > a {
+
+    text-decoration: none;
+
+}
+
+.widget > div > ul li > ul, .widget > ul li > ul, .widget > div > ul li > ol, .widget > ul li > ol {
+
+    margin-top: 8px;
+
+    margin-bottom: -8px;
+
+    margin-left: -5px;
+
+}
+
+.widget ul, .widget ol {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.widget select {
+
+    max-width: 100%;
+
+    font-size: 0.9em;
+
+}
+
+.widget .rss-date, .widget .post-date, .widget .comment-author-link {
+
+    display: inline;
+
+    font-size: 0.9em;
+
+}
+
+.widget .rss-date, .widget .post-date {
+
+    display: block;
+
+}
+
+.widget .rss-date {
+
+    margin-bottom: 3px;
+
+}
+
+.widget .rssSummary {
+
+    font-size: 0.95em;
+
+    line-height: 1.42857;
+
+}
+
+.widget cite {
+
+    display: block;
+
+    font-size: 0.9em;
+
+    text-align: right;
+
+}
+
+.widget .view-more {
+
+    padding: 12px;
+
+}
+
+.widget .owl-carousel .owl-dots {
+
+    margin-bottom: -10px;
+
+}
+
+.widget .slick-dots {
+
+    margin-bottom: -5px;
+
+}
+
+.widget_recent_entries > ul li, .widget_recent_comments > ul li, .widget_pages > ul li, .widget_meta > ul li, .widget_nav_menu > div > ul li, .widget_archive > ul li, .widget_categories > ul li, .widget_rss > ul li {
+
+    padding: 7px 0 7px 15px;
+
+}
+
+.widget_recent_entries > ul li:before, .widget_recent_comments > ul li:before, .widget_pages > ul li:before, .widget_meta > ul li:before, .widget_nav_menu > div > ul li:before, .widget_archive > ul li:before, .widget_categories > ul li:before, .widget_rss > ul li:before {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 0;
+
+    height: 0;
+
+    border-top: 4px solid transparent;
+
+    border-bottom: 4px solid transparent;
+
+    border-left: 4px solid #333;
+
+    margin-left: -11px;
+
+    margin-right: 5px;
+
+}
+
+.widget_calendar caption {
+
+    color: #313131;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-bottom: 8px;
+
+}
+
+.widget_calendar table {
+
+    width: 100%;
+
+    font-size: 0.9286em;
+
+}
+
+.widget_calendar table th, .widget_calendar table td {
+
+    text-align: center;
+
+    vertical-align: middle;
+
+}
+
+.widget_calendar table td#prev {
+
+    text-align: left;
+
+    padding: 8px 0;
+
+}
+
+.widget_calendar table td#next {
+
+    text-align: right;
+
+    padding: 8px 0;
+
+}
+
+.widget.widget_text ul, .widget.widget_text li {
+
+    border-width: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.widget.widget_text ul p, .widget.widget_text li p {
+
+    margin-bottom: 10px;
+
+}
+
+.widget .tagcloud {
+
+    margin-top: -0.3846em;
+
+    margin-bottom: -0.3846em;
+
+}
+
+.widget .tagcloud a {
+
+    margin: 0.3846em 0.3846em 0.3846em 0;
+
+    border: 1px solid #ccc;
+
+    background: #efefef;
+
+    border-radius: 3px;
+
+    padding: 0.3846em;
+
+    line-height: 1.2;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    font-size: 0.8571em !important;
+
+}
+
+.widget .tagcloud a:hover {
+
+    color: #fff;
+
+}
+
+/* Flickr Widget */.flickr_badge_image, .wpb_content_element .flickr_badge_image {
+
+    float: none;
+
+    margin: 10px 5px 20px;
+
+    display: inline-block;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    border-radius: 4px;
+
+    padding: 4px;
+
+    width: auto;
+
+    height: auto;
+
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+
+    -moz-transition: opacity 0.3s ease-in-out 0s;
+
+    transition: opacity 0.3s ease-in-out 0s;
+
+}
+
+.flickr_badge_image img, .wpb_content_element .flickr_badge_image img {
+
+    width: 75px;
+
+    height: 75px;
+
+}
+
+/* Wysija Widget */.widget.widget_wysija h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.widget.widget_wysija p {
+
+    font-size: 0.9286em;
+
+    margin-bottom: 10px;
+
+}
+
+.widget.widget_wysija .wysija-paragraph, .widget.widget_wysija .wysija-checkbox-label, .widget.widget_wysija .wysija-checkbox-paragraph {
+
+    font-size: 1em;
+
+}
+
+.widget.widget_wysija .wysija-paragraph label, .widget.widget_wysija .wysija-checkbox-label {
+
+    font-size: 0.9286em;
+
+}
+
+.widget.widget_wysija .wysija-checkbox-label {
+
+    margin-bottom: 0;
+
+}
+
+.widget.widget_wysija .formError {
+
+    position: static !important;
+
+}
+
+.widget.widget_wysija .formError .formErrorContent {
+
+    width: 100%;
+
+    line-height: 1.4;
+
+    padding: 5px 0;
+
+    background: none;
+
+    border: none;
+
+    color: #eb340e;
+
+}
+
+.widget.widget_wysija .wysija-paragraph .formError .formErrorContent {
+
+    padding: 5px 0 10px;
+
+}
+
+.widget.widget_wysija .widget_wysija_cont .updated, .widget.widget_wysija .widget_wysija_cont .message, .widget.widget_wysija .widget_wysija_cont .error, .widget.widget_wysija .widget_wysija_cont .xdetailed-errors {
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    margin: 0;
+
+    color: inherit;
+
+    line-height: inherit;
+
+}
+
+.widget.widget_wysija .widget_wysija_cont .updated, .widget.widget_wysija .widget_wysija_cont .message {
+
+    color: #3c763d;
+
+}
+
+.widget.widget_wysija .widget_wysija_cont .error, .widget.widget_wysija .widget_wysija_cont .xdetailed-errors {
+
+    color: #eb340e;
+
+}
+
+.widget.widget_wysija .wysija-input {
+
+    width: 100%;
+
+    max-width: 262px;
+
+}
+
+.sidebar .widget.widget_wysija { background: #f5f5f5; border-bottom: 1px solid #dfdfdf; border-left: 1px solid #ececec; border-right: 1px solid #ececec; background-color: #f5f5f5; background: - webkit-linear-gradient(top, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5; background: linear-gradient(to bottom, #fff 1%, #f9f9f9 98%) repeat scroll 0 0 #f5f5f5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 8px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04); margin-bottom: 20px; margin-left: auto; margin-right: auto; margin-top: 20px; min-height: 100px; position: relative; text-align: center; }
+.sidebar .widget.widget_wysija .box-content { position: relative; top: -1px; border-radius: 8px; border-top: 3px solid #33b8ff; border-top-width: 4px; padding: 30px 25px 25px 25px; }
+.sidebar .widget.widget_wysija .wysija-input { text-align: center; }
+.sidebar .widget.widget_wysija .wysija-submit { margin: 20px auto 0; }
+.wysija-msg .updated, .wysija-msg .message { color: #3c763d; }
+.wysija-msg .error, .wysija-msg .xdetailed-errors { color: #eb340e; }
+.wysija-msg ul { list-style: none; padding-left: 0; margin-bottom: 10px; font-weight: 600; }
+
+/* Search Form */
+#searchform { *zoom: 1; }
+#searchform:before, #searchform:after { content: " "; display: table; }
+#searchform:after { clear: both; }
+#searchform .screen-reader-text, #searchform #s, #searchform #submit { display: block; }
+#searchform #s { margin-bottom: 1em; width: 100%; max-width: 250px; }
+
+.widget > div > ul li > a, .widget > ul li > a { color: #666; }
+.widget > div > ul li > a, .widget > ul li > a { text-decoration: none; }
+
+input[type="submit"]{ background: #283949; border-color: #283949; }
+input[type="submit"] { border: 1px solid #ccc; color: #F3CC29; padding: 6px 10px;  border-radius: 3px; line-height: 1.42857; }
+input[type="email"], input[type="number"], 
+input[type="password"], input[type="search"], 
+input[type="tel"], input[type="text"], 
+input[type="url"], input[type="color"], 
+input[type="date"], input[type="datetime"], 
+input[type="datetime-local"], input[type="month"], 
+input[type="time"], input[type="week"], select, textarea { line-height: 1.42857; padding: 6px 8px; font-size: 14px; vertical-align: middle; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; }
+input[type="email"], input[type="number"], 
+input[type="password"], input[type="search"], 
+input[type="tel"], input[type="text"], 
+input[type="url"], input[type="color"], 
+input[type="date"], input[type="datetime"], 
+input[type="datetime-local"], input[type="month"], 
+input[type="time"], input[type="week"], 
+textarea, select { border: 1px solid #ccc; border-radius: 3px; outline: none; text-align: left; background: #fff; color: #777; }
+.recentcomments a{ color: #333333;}
+a:hover { color: #F3CC29; }
+i.fa.fa-arrow-right { background-color: #2c3e50; color: #fff; margin-left: -20px; right: 0; top: 0; width: 60px; height: 100%; line-height: 60px; text-align: center; white-space: nowrap; }
+.form-group i {  position: absolute; top: 18px!important; font-size: 18px; text-align: center; line-height: 18px; left: 20px!important; color: #f3cc29; z-index: 1; }
+.custom-nav-project { margin-left: 0; margin-right: 0; }
+.custom-row { padding-left: 0px!important; }
+div.contact-info input, div.contact-info textarea { padding: 0 50px; }
+.contact-info textarea { min-height: 238px; padding-top: 15px !important; resize: none; }
+
+
+
